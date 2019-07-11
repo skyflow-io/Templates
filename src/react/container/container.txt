@@ -1,0 +1,25 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './{{ name }}Container.scss';
+
+class {{ name }}Container extends React.Component {
+
+    constructor(props){
+        super(props);
+    }
+
+    render() {
+
+        return (
+            <div id='{{ name }}Container'>
+                My awesome container
+            </div>
+        )
+    }
+
+}
+
+ReactDOM.render(
+    {{ name }}Container,
+    document.querySelector('#{{ name }}-dom-container')
+);
