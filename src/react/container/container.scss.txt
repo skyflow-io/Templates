@@ -1,5 +1,5 @@
 //@import "../../styles/variables";
 
-#{{ component__style }} {
+#{{ component__style }}-dom-container {
 
 }

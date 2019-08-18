@@ -11,9 +11,9 @@ class {{ name }}Container extends React.Component {
     render() {
 
         return (
-            <div id='{{ component__style }}'>
+            <React.Fragment>
                 My awesome {{ name }}Container
-            </div>
+            </React.Fragment>
         )
     }
 
