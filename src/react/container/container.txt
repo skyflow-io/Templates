@@ -11,8 +11,8 @@ class {{ name }}Container extends React.Component {
     render() {
 
         return (
-            <div id='{{ name }}Container'>
-                My awesome container
+            <div id='{{ component__style }}'>
+                My awesome {{ name }}Container
             </div>
         )
     }
@@ -21,5 +21,5 @@ class {{ name }}Container extends React.Component {
 
 ReactDOM.render(
     {{ name }}Container,
-    document.querySelector('#{{ name }}-dom-container')
+    document.getElementById('{{ component__style }}-dom-container')
 );

@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import './{{ name }}Component.scss';
 
 export default class {{ name }}Component extends React.Component {
@@ -16,8 +16,8 @@ export default class {{ name }}Component extends React.Component {
     render() {
 
         return (
-            <div className='{{ name }}Component'>
-                My awesome component
+            <div className='{{ component__style }}'>
+                My awesome {{ name }}Component
             </div>
         )
     }
