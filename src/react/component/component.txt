@@ -1,25 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import ReactDOM from 'react-dom';
 import './{{ name }}Component.scss';
 
-export default class {{ name }}Component extends React.Component {
+const {{ name }}Component = () => {
+      const [count, setCount] = useState(0);
 
-    constructor(props){
-        super(props);
+      return (
+        <div className='{{ component__style }}'>
+          <p>You clicked {count} times</p>
+          <button onClick={() => setCount(count + 1)}>
+            Click me
+          </button>
+        </div>
+      );
+};
 
-        this.state = {
-
-        };
-
-    }
-
-    render() {
-
-        return (
-            <div className='{{ component__style }}'>
-                My awesome {{ name }}Component
-            </div>
-        )
-    }
-
-}
+export default {{ name }}Component;

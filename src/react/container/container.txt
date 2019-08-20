@@ -2,24 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './{{ name }}Container.scss';
 
-class {{ name }}Container extends React.Component {
+const {{ name }}Container = () =>{
 
-    constructor(props){
-        super(props);
-    }
+    return (
+        <React.Fragment>
+            My awesome {{ name }}Container
+        </React.Fragment>
+    );
 
-    render() {
-
-        return (
-            <React.Fragment>
-                My awesome {{ name }}Container
-            </React.Fragment>
-        )
-    }
-
-}
+};
 
 ReactDOM.render(
-    {{ name }}Container,
+    <{{ name }}Container />,
     document.getElementById('{{ component__style }}-dom-container')
 );
