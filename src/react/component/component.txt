@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+// import PropTypes from 'prop-types';
 // import ReactDOM from 'react-dom';
 import './{{ name }}Component.scss';
 
-const {{ name }}Component = () => {
-      const [count, setCount] = useState(0);
+const {{ name }}Component = (props) => {
+    const [count, setCount] = useState(0);
 
-      return (
+    return (
         <div className='{{ component__style }}'>
-          <p>You clicked {count} times</p>
-          <button onClick={() => setCount(count + 1)}>
-            Click me
-          </button>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}> Click me </button>
         </div>
-      );
+    );
 };
 
 export default {{ name }}Component;
